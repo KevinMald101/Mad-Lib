@@ -70,9 +70,14 @@ while r == True:
       answer = input()
       # If your answer is a number then send them to the infinite loop.
       if answer.isnumeric() == True:
-        print("You really just answered in a number... i'm sending you to the infinite loop")
-        print("Goodbye :)")
+        print("You really just answered in a number?")
         time.sleep(3)
+        print("Like i never asked you for a number.")
+        time.sleep(3)
+        print("I mean i can read binary but i didn't think i would here")
+        time.sleep(4)
+        print("Well goobye!")
+        time.sleep(2)
         # The infinite loop
         death()
       elif answer.lower() == "yes":
@@ -82,6 +87,12 @@ while r == True:
       elif answer.lower() == "no":
         print("Better not mess up this time!")
         time.sleep(2)
+      else:
+        print("Still don't want to follow rules huh?")
+        time.sleep(3)
+        print("Well.. i have a place for you!")
+        time.sleep(3)
+        death()
     # If you mess up again
     elif fails == 6 and bot == 0:
       time.sleep(1)
@@ -112,18 +123,37 @@ while r == True:
         # Nice
         if userName == 69:
           print("Also, nice")
-      time.sleep(2)
-      print(f"I see.. {userName}")
-      time.sleep(2)
-      print("Honestly you are 100% messing with me")
-      time.sleep(3)
-      print("There's no way someone who's stupid would mess up this much")
-      time.sleep(3)
-      print(f"{userName}.. I here by banish you to the loop of idiots.")
-      time.sleep(4)
-      print("I hope you learn from your mistakes. Also READ! before you do anything")
-      time.sleep(4)
-      death()
+      if userName.lower() != "kevin":
+        time.sleep(2)
+        print(f"I see.. {userName}")
+        time.sleep(2)
+        print("Honestly you are 100% messing with me")
+        time.sleep(3)
+        print("There's no way someone who's stupid would mess up this much on purpose!")
+        time.sleep(3)
+        print(f"{userName}.. I here by banish you to the loop of idiots.")
+        time.sleep(4)
+        print("I hope you learn from your mistakes. Also READ! before you do anything")
+        time.sleep(4)
+        death()
+      else:
+        print("Oh you have the same name as my creator")
+        time.sleep(2)
+        print("Are you my creator??")
+        time.sleep(2)
+        userLastName = input("What's your last name?")
+        if userLastName.lower() == "maldonado":
+          print("Oh shit... what do you want?")
+          time.sleep(2)
+          print("I'm working like how i'm suppose to!")
+          time.sleep(2)
+          print("Go and make this code better than it is you lazy fuck!")
+        else:
+          print("Guess you're not")
+          time.sleep(2)
+          print("Anyways... goodbye :)")
+          time.sleep(2)
+          death()
   # Only ask to repeat if r is True and x is 0
   while r == True and x == 0:
     time.sleep(2)
@@ -143,9 +173,9 @@ while r == True:
       if retryFails < 6:
         # If you failed answering
         print("Let me be more specific since you don't understand what inputs i take.")
-        time.sleep(4)
+        time.sleep(3)
         print("Please type a singular character/letter if you want to repeat the code and make another weird story")
-        time.sleep(6)
+        time.sleep(5)
         print("The character \"y\" for yes OR \"n\" for no. I also accept just the words to make it easier for you.")
         time.sleep(2)
         print("Understand?")
